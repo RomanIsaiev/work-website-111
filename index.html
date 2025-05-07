@@ -1,20 +1,1321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Виктория Бардадым</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu-container"
+        >
+          меню
+        </button>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <h1 class="title">Виктория Бардадым</h1>
+          <p class="desc">
+            Ваш личный ведический астролог для жизни, семьи и бизнеса
+          </p>
+          <ul class="list">
+            <li class="list-item">11+ лет практики</li>
+            <li class="list-item">Более 25 000 клиентов по всему миру</li>
+            <li class="list-item">
+              Сотни точных прогнозов, которые помогли людям сохранить здоровье,
+              укрепить отношения, выбрать верный путь
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="mission">
+        <div class="container">
+          <h2 class="title">Моя миссия <br />– не просто</h2>
+          <p class="subtitle">дать прогноз</p>
+          <p class="text">
+            Я создаю пространство, где вы получаете поддержку, ответы и
+            стратегию, основанную на вашей звёздной карте
+          </p>
+          <p class="text">От быстрых решений – до глубокой трансформации</p>
+          <picture>
+            <source
+              srcset="
+                ./src/img/mission/arrows-1x.png 1x,
+                ./src/img/mission/arrows-2x.png 2x
+              "
+              width="140"
+              height="auto"
+            />
+            <img
+              class="mission-arrow"
+              src="./src/img/mission/arrows-1x.png"
+              alt="arrow"
+              width="140"
+              height="auto"
+            />
+          </picture>
+          <ul class="list">
+            <li class="list-item">
+              Консультации и сопровождение в формате, где вы – в центре внимания
+            </li>
+            <li class="list-item">
+              Точно. Индивидуально. С уважением к вашей истории
+            </li>
+          </ul>
+          <a class="choose-btn" href="#formats">Выбрать консультацию</a>
+        </div>
+      </section>
+      <section class="author" id="about-me">
+        <picture>
+          <source
+            srcset="
+              ./src/img/author/bg-1x.jpg 1x,
+              ./src/img/author/bg-2x.jpg 2x
+            "
+            width="430"
+            height="auto"
+          />
+          <img
+            class="author-bg"
+            src="./src/img/author/bg-1x.jpg"
+            alt="author"
+            width="430"
+            height="auto"
+          />
+        </picture>
+        <div class="container">
+          <h2 class="title">Кто я и почему мне</h2>
+          <p class="subtitle">можно доверять</p>
+          <ul class="list">
+            <li class="list-item">
+              <p class="item-text">В астрологии с <span>2012 года</span></p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">
+                <span>Более 10 000</span> личных консультаций
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">
+                <span>15 000+ учеников</span> на обучающих программах
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">
+                <span>Преподаю</span> ведическую астрологию и нумерологию с 2016
+                года
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">
+                <span>Более 25 лет</span> в счастливом семейном союзе
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">
+                <span>Мама</span> взрослых, реализованных детей
+              </p>
+            </li>
+          </ul>
+          <h2 class="astro-title">
+            Астрология — это <br />
+            не про магию и
+          </h2>
+          <p class="astro-subtitle">не про оправдания</p>
+          <p class="astro-text">
+            Это – система, которая позволяет понимать себя, свои сильные и
+            слабые стороны, действовать вовремя и строить жизнь, в которой есть
+            место и любви, и успеху, и здоровью
+          </p>
+          <p class="astro-text">
+            Я видела, как одна консультация меняет ход событий – и с
+            благодарностью делюсь этим знанием дальше
+          </p>
+        </div>
+        <div class="marquee-container">
+          <p class="marquee-text">Что важно знать про астрологию</p>
+        </div>
+      </section>
+      <section class="no-magic">
+        <div class="container">
+          <h2 class="title">Астрология –это не магия</h2>
+          <p class="subtitle">Это система</p>
+          <p class="desc">
+            Ведическая астрология – это не мистика и не игра в предсказания. Это
+            точный и глубоко логичный инструмент, который помогает:
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              <img src="./src/img/no-magic/arrow.svg" alt="arrow" width="46" />
+              <p class="item-text">Понять свои сильные и слабые стороны</p>
+            </li>
+            <li class="list-item">
+              <img src="./src/img/no-magic/arrow.svg" alt="arrow" width="46" />
+              <p class="item-text">Найти скрытые ресурсы</p>
+            </li>
+            <li class="list-item">
+              <img src="./src/img/no-magic/arrow.svg" alt="arrow" width="46" />
+              <p class="item-text">
+                Принять важные решения в гармонии с природными циклами
+              </p>
+            </li>
+            <li class="list-item">
+              <img src="./src/img/no-magic/arrow.svg" alt="arrow" width="46" />
+              <p class="item-text">
+                Действовать не наугад, а в резонансе с собой и своим временем
+              </p>
+            </li>
+          </ul>
+          <h2 class="task-title">Моя задача</h2>
+          <p class="tesk-desc">
+            – не сказать, что делать, а показать, когда, почему и как это может
+            быть для вас наилучшим решением
+          </p>
+          <ul class="task-list">
+            <li class="task-item">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/no-magic/task-01-1x.png 1x,
+                    ./src/img/no-magic/task-01-2x.png 2x
+                  "
+                  width="40"
+                  height="auto"
+                />
+                <img
+                  class="task-image"
+                  src="./src/img/no-magic/task-01-1x.png"
+                  alt="image"
+                  width="40"
+                  height="auto"
+                />
+              </picture>
+              <p class="task-text">
+                Результаты консультаций зависят от ваших действий. А астрология
+                –ваш навигатор, если вы действительно готовы двигаться
+              </p>
+            </li>
+            <li class="task-item">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/no-magic/task-02-1x.png 1x,
+                    ./src/img/no-magic/task-02-2x.png 2x
+                  "
+                  width="40"
+                  height="auto"
+                />
+                <img
+                  class="task-image"
+                  src="./src/img/no-magic/task-02-1x.png"
+                  alt="image"
+                  width="40"
+                  height="auto"
+                />
+              </picture>
+              <p class="task-text">
+                Все консультации проводятся строго конфиденциально
+              </p>
+            </li>
+            <li class="task-item">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/no-magic/task-03-1x.png 1x,
+                    ./src/img/no-magic/task-03-2x.png 2x
+                  "
+                  width="40"
+                  height="auto"
+                />
+                <img
+                  class="task-image"
+                  src="./src/img/no-magic/task-03-1x.png"
+                  alt="image"
+                  width="40"
+                  height="auto"
+                />
+              </picture>
+              <p class="task-text">
+                Форматы (кроме срочной) согласовываются после оплаты. Время
+                ожидания: 1–2 недели. Срочные консультации проводятся в течение
+                1–2 дней
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="formats" id="formats">
+        <div class="container">
+          <h2 class="title">Форматы</h2>
+          <p class="subtitle">консультаций</p>
+          <ul class="list">
+            <li class="list-item" id="intro-consultation">
+              <div class="item-box">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/format/format-01-1x.png 1x,
+                      ./src/img/format/format-01-2x.png 2x
+                    "
+                    width="48"
+                    height="auto"
+                  />
+                  <img
+                    class="format-item-image"
+                    src="./src/img/format/format-01-1x.png"
+                    alt="image"
+                    width="48"
+                    height="auto"
+                  />
+                </picture>
+                <p class="item-title">Вводная</p>
+                <p class="item-subtitle">консультация</p>
+                <ul class="format-list">
+                  <li class="format-item">
+                    <p class="format-text">Время: до 45 минут</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Формат: онлайн (видео/аудио)</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Стоимость: 200 €</p>
+                  </li>
+                </ul>
+                <div class="hidden-info">
+                  <p class="format-desc">
+                    Если вы только начинаете знакомство с собой через звёзды –
+                    эта встреча даст мощную точку опоры
+                  </p>
+                  <ul class="inside-list">
+                    <li class="inside-item">
+                      Первичный разбор вашей натальной карты
+                    </li>
+                    <li class="inside-item">
+                      Определение ключевых тем, актуальных прямо сейчас
+                    </li>
+                    <li class="inside-item">Прогноз на 3 месяца</li>
+                    <li class="inside-item">Ответы на волнующие вопросы</li>
+                  </ul>
+                  <p class="result-title">Результат:</p>
+                  <ul class="result-list">
+                    <li class="result-item">
+                      Вы лучше поймёте свои сильные и уязвимые стороны
+                    </li>
+                    <li class="result-item">
+                      Сформируете осознание направлений, в которых стоит
+                      двигаться
+                    </li>
+                    <li class="result-item">
+                      Почувствуете уверенность и понимание себя
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="buy-btn" data-modal-open="modal1">
+                  купить
+                </button>
+              </div>
+              <button class="format-more">узнать детали</button>
+            </li>
+            <li class="list-item" id="urgent-consultation">
+              <div class="item-box">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/format/format-02-1x.png 1x,
+                      ./src/img/format/format-02-2x.png 2x
+                    "
+                    width="48"
+                    height="auto"
+                  />
+                  <img
+                    class="format-item-image"
+                    src="./src/img/format/format-02-1x.png"
+                    alt="image"
+                    width="48"
+                    height="auto"
+                  />
+                </picture>
+                <p class="item-title">Срочная</p>
+                <p class="item-subtitle">консультация</p>
+                <ul class="format-list">
+                  <li class="format-item">
+                    <p class="format-text">Время: до 60 минут</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Формат: онлайн (видео/аудио)</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Стоимость: 1000 €</p>
+                  </li>
+                </ul>
+                <div class="hidden-info">
+                  <p class="format-desc">
+                    Если вам срочно нужно принять важное решение – в отношениях,
+                    деньгах, здоровье или бизнесе – эта встреча даст вам опору и
+                    ясность
+                  </p>
+                  <ul class="inside-list">
+                    <li class="inside-item">
+                      Разбор текущих астрологических периодов
+                    </li>
+                    <li class="inside-item">Ответы на срочные вопросы</li>
+                    <li class="inside-item">
+                      Индивидуальные рекомендации по действиям
+                    </li>
+                    <li class="inside-item">
+                      Эмоционическая поддержка и прояснение внутренних состояний
+                    </li>
+                  </ul>
+                  <p class="result-title">Результат:</p>
+                  <ul class="result-list">
+                    <li class="result-item">Чёткие следующие шаги</li>
+                    <li class="result-item">Понимание, что сейчас важно</li>
+                    <li class="result-item">Снижение тревожности и ясность</li>
+                  </ul>
+                </div>
+                <button type="button" class="buy-btn" data-modal-open="modal1">
+                  купить
+                </button>
+              </div>
+              <button class="format-more">узнать детали</button>
+            </li>
+            <li class="list-item" id="full-consultation">
+              <div class="item-box">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/format/format-03-1x.png 1x,
+                      ./src/img/format/format-03-2x.png 2x
+                    "
+                    width="48"
+                    height="auto"
+                  />
+                  <img
+                    class="format-item-image"
+                    src="./src/img/format/format-03-1x.png"
+                    alt="image"
+                    width="48"
+                    height="auto"
+                  />
+                </picture>
+                <p class="item-title">Полная</p>
+                <p class="item-subtitle">консультация</p>
+                <ul class="format-list">
+                  <li class="format-item">
+                    <p class="format-text">Время: до 90 минут</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Формат: онлайн (видео/аудио)</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Стоимость: 900 €</p>
+                  </li>
+                </ul>
+                <div class="hidden-info">
+                  <p class="format-desc">
+                    Консультация, которая даёт не просто ответы, а систему
+                    навигации в вашей жизни
+                  </p>
+                  <ul class="inside-list">
+                    <li class="inside-item">
+                      Индивидуальный разбор натальной карты
+                    </li>
+                    <li class="inside-item">
+                      Общий прогноз на 1–3 года: ключевые периоды, повороты,
+                      точки роста
+                    </li>
+                    <li class="inside-item">
+                      Подбор дат для важных событий (переезд, брак, запуск
+                      проекта и др.)
+                    </li>
+                    <li class="inside-item">
+                      Ответы на ваши вопросы: финансы, отношения, здоровье,
+                      предназначение
+                    </li>
+                  </ul>
+                  <p class="result-title">Результат:</p>
+                  <ul class="result-list">
+                    <li class="result-item">
+                      Понимание личных ритмов и жизненных этапов
+                    </li>
+                    <li class="result-item">
+                      Причины цикличных ситуаций и внутренние “заторы”
+                    </li>
+                    <li class="result-item">План действий на ближайший год</li>
+                    <li class="result-item">
+                      Чувство уверенности и внутренней согласованности
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="buy-btn" data-modal-open="modal1">
+                  купить
+                </button>
+              </div>
+              <button class="format-more">узнать детали</button>
+            </li>
+            <li class="list-item" id="premium-consultation">
+              <div class="item-box">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/format/format-04-1x.png 1x,
+                      ./src/img/format/format-04-2x.png 2x
+                    "
+                    width="48"
+                    height="auto"
+                  />
+                  <img
+                    class="format-item-image"
+                    src="./src/img/format/format-04-1x.png"
+                    alt="image"
+                    width="48"
+                    height="auto"
+                  />
+                </picture>
+                <p class="item-title">Премиальная</p>
+                <p class="item-subtitle">консультация</p>
+                <ul class="format-list">
+                  <li class="format-item">
+                    <p class="format-text">Время: До 2 часов</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Формат: Онлайн или офлайн в Киеве</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Стоимость: 1500 €</p>
+                  </li>
+                </ul>
+                <div class="hidden-info">
+                  <p class="format-desc">
+                    Глубокая астрологическая диагностика с полным охватом всех
+                    сфер жизни и поддержкой после встречи
+                  </p>
+                  <ul class="inside-list">
+                    <li class="inside-item">Всё из полной консультации</li>
+                  </ul>
+                  <p class="inside-plus">+</p>
+                  <ul class="inside-list">
+                    <li class="inside-item">
+                      Медицинская астрология: уязвимости, ресурсные периоды,
+                      профилактика
+                    </li>
+                    <li class="inside-item">
+                      Кармический анализ: задачи души, прошлые влияния,
+                      подсознательные циклы
+                    </li>
+                    <li class="inside-item">
+                      Детальный прогноз на 12 месяцев – месяц за месяцем
+                    </li>
+                    <li class="inside-item">
+                      Персональная программа на 6 месяцев: рекомендации, периоды
+                      действия и отдыха
+                    </li>
+                    <li class="inside-item">
+                      Две мини-сессии сопровождения через 1 и 3 месяца
+                    </li>
+                  </ul>
+                  <p class="result-title">Результат:</p>
+                  <ul class="result-list">
+                    <li class="result-item">
+                      Целостная картина: кто вы, куда идёте, где тормозит и как
+                      раскрыть свой потенциал
+                    </li>
+                    <li class="result-item">
+                      Прогноз и инструменты на год вперёд
+                    </li>
+                    <li class="result-item">Поддержка и корректировка пути</li>
+                    <li class="result-item">
+                      Глубокое ощущение ясности, внутреннего покоя и направления
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="buy-btn" data-modal-open="modal1">
+                  купить
+                </button>
+              </div>
+              <button class="format-more">узнать детали</button>
+            </li>
+          </ul>
+          <h2 class="spec-title" id="specialized-consultations">
+            Специализированные
+          </h2>
+          <p class="spec-subtitle">консультации</p>
+          <ul class="list">
+            <li class="list-item">
+              <div class="item-box">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/format/format-05-1x.png 1x,
+                      ./src/img/format/format-05-2x.png 2x
+                    "
+                    width="48"
+                    height="auto"
+                  />
+                  <img
+                    class="format-item-image"
+                    src="./src/img/format/format-05-1x.png"
+                    alt="image"
+                    width="48"
+                    height="auto"
+                  />
+                </picture>
+                <p class="item-title">Совместимость</p>
+                <p class="item-subtitle">и отношения</p>
+                <ul class="format-list">
+                  <li class="format-item">
+                    <p class="format-text">Время: до 90 минут</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Формат: онлайн (видео/аудио)</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Стоимость: 700 €</p>
+                  </li>
+                </ul>
+                <div class="hidden-info">
+                  <p class="format-desc">
+                    Гармония в отношениях начинается с понимания. Эта
+                    консультация помогает увидеть глубинную природу вашей связи
+                    — и найти точки согласия, роста и любви.
+                  </p>
+                  <ul class="inside-list">
+                    <li class="inside-item">
+                      Совместимость двух натальных карт
+                    </li>
+                    <li class="inside-item">
+                      Анализ совместимости по сферам: любовь, брак, финансы,
+                      духовный и личностный рост
+                    </li>
+                    <li class="inside-item">
+                      Осознание скрытых конфликтов, “триггеров” и зон поддержки
+                    </li>
+                    <li class="inside-item">
+                      Ответы на самые важные вопросы о вашем союзе
+                    </li>
+                  </ul>
+                  <p class="result-title">Результат:</p>
+                  <ul class="result-list">
+                    <li class="result-item">
+                      Глубокое понимание партнёрской динамики
+                    </li>
+                    <li class="result-item">
+                      Причины притяжения и непонимания
+                    </li>
+                    <li class="result-item">
+                      Возможности для развития, укрепления и совместного
+                      движения
+                    </li>
+                    <li class="result-item">
+                      Энергия доверия и ясности в отношениях
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="buy-btn" data-modal-open="modal2">
+                  купить
+                </button>
+              </div>
+              <button class="format-more">узнать детали</button>
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/format/format-06-1x.png 1x,
+                      ./src/img/format/format-06-2x.png 2x
+                    "
+                    width="48"
+                    height="auto"
+                  />
+                  <img
+                    class="format-item-image"
+                    src="./src/img/format/format-06-1x.png"
+                    alt="image"
+                    width="48"
+                    height="auto"
+                  />
+                </picture>
+                <p class="item-title">Бизнес</p>
+                <p class="item-subtitle">и карьера</p>
+                <ul class="format-list">
+                  <li class="format-item">
+                    <p class="format-text">Время: 90–120 минут</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Формат: Онлайн или офлайн в Киеве</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Стоимость: 1200 €</p>
+                  </li>
+                </ul>
+                <div class="hidden-info">
+                  <p class="format-desc">
+                    Когда бизнес идёт по звёздам — решения становятся точными, а
+                    стратегии эффективными. Эта консультация — для
+                    предпринимателей, руководителей и тех, кто хочет работать в
+                    потоке, а не на износ.
+                  </p>
+                  <ul class="inside-list">
+                    <li class="inside-item">
+                      Индивидуальный астрологический анализ профессионального
+                      пути
+                    </li>
+                    <li class="inside-item">
+                      Подбор подходящих направлений деятельности
+                    </li>
+                    <li class="inside-item">Анализ карты бизнеса / компании</li>
+                    <li class="inside-item">
+                      Годовой прогноз: риски, возможности, точки роста
+                    </li>
+                    <li class="inside-item">
+                      Подбор дат для запусков, сделок, найма, инвестиций
+                    </li>
+                    <li class="inside-item">
+                      Разбор кандидатов (при необходимости)
+                    </li>
+                  </ul>
+                  <p class="result-title">Результат:</p>
+                  <ul class="result-list">
+                    <li class="result-item">Ясность в выборе стратегий</li>
+                    <li class="result-item">
+                      Понимание циклов роста и кризисов
+                    </li>
+                    <li class="result-item">
+                      Оптимальные временные окна для решений
+                    </li>
+                    <li class="result-item">
+                      Чувство уверенности в ключевых бизнес-шагах
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="buy-btn" data-modal-open="modal2">
+                  купить
+                </button>
+              </div>
+              <button class="format-more">узнать детали</button>
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/img/format/format-07-1x.png 1x,
+                      ./src/img/format/format-07-2x.png 2x
+                    "
+                    width="48"
+                    height="auto"
+                  />
+                  <img
+                    class="format-item-image"
+                    src="./src/img/format/format-07-1x.png"
+                    alt="image"
+                    width="48"
+                    height="auto"
+                  />
+                </picture>
+                <p class="item-title">Медицинская</p>
+                <p class="item-subtitle">астрология</p>
+                <ul class="format-list">
+                  <li class="format-item">
+                    <p class="format-text">Время: до 60 минут</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Формат: Онлайн (видео/аудио)</p>
+                  </li>
+                  <li class="format-item">
+                    <p class="format-text">Стоимость: 700 €</p>
+                  </li>
+                </ul>
+                <div class="hidden-info">
+                  <p class="format-desc">
+                    Тело всегда говорит — а звёзды подсказывают, где его
+                    слышать. Эта консультация подходит тем, кто хочет более
+                    осознанно относиться к своему здоровью.
+                  </p>
+                  <ul class="inside-list">
+                    <li class="inside-item">
+                      Анализ натальной карты с фокусом на здоровье
+                    </li>
+                    <li class="inside-item">Уязвимые системы организма</li>
+                    <li class="inside-item">
+                      Подбор благоприятных периодов для диагностики, лечения,
+                      восстановления
+                    </li>
+                    <li class="inside-item">
+                      Рекомендации по профилактике (питание, образ жизни, отдых)
+                    </li>
+                    <li class="inside-item">
+                      Ответы на личные вопросы по самочувствию
+                    </li>
+                  </ul>
+                  <p class="result-title">Результат:</p>
+                  <ul class="result-list">
+                    <li class="result-item">Глубокое понимание своего тела</li>
+                    <li class="result-item">
+                      Осознание астрологических причин повторяющихся симптомов
+                    </li>
+                    <li class="result-item">Профилактика через ритмы</li>
+                    <li class="result-item">
+                      План заботы о себе в созвучии с вашим космическим кодом
+                      судьбы
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="buy-btn" data-modal-open="modal2">
+                  купить
+                </button>
+              </div>
+              <button class="format-more">узнать детали</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="premium" id="premium-support">
+        <div class="container">
+          <div class="wrapper">
+            <picture>
+              <source
+                srcset="
+                  ./src/img/premium/prem-01-1x.png 1x,
+                  ./src/img/premium/prem-01-2x.png 2x
+                "
+                width="48"
+                height="auto"
+              />
+              <img
+                class="format-item-image"
+                src="./src/img/premium/prem-01-1x.png"
+                alt="image"
+                width="48"
+                height="auto"
+              />
+            </picture>
+            <p class="item-title">Премиум</p>
+            <p class="item-subtitle">сопровождение</p>
+            <ul class="format-list">
+              <li class="format-item">
+                <p class="format-text">Формат:</p>
+              </li>
+              <li class="format-item">
+                <p class="format-text">онлайн или офлайн (по запросу)</p>
+              </li>
+            </ul>
+            <p class="text">
+              Это не просто консультация. <br />
+              Это – партнёрство на пути. Когда рядом человек, который знает вашу
+              карту, понимает вашу историю, и мягко ведёт вас через самые важные
+              точки жизни
+            </p>
+            <ul class="list">
+              <li class="list-item">
+                Личное сопровождение 24/7 – ответы на ваши вопросы в течение
+                суток
+              </li>
+              <li class="list-item">
+                Актуальные напоминания о ретроградах, важных транзитах, окнах
+                риска и роста
+              </li>
+              <li class="list-item">
+                Корректировка рекомендаций – если обстоятельства меняются
+              </li>
+              <li class="list-item">
+                Анализ карт до 5 членов семьи – партнёр, дети, бизнес-партнёры
+              </li>
+              <li class="list-item">
+                Ежемесячный астропрогноз – на ключевые события и внутренние
+                состояния
+              </li>
+              <li class="list-item">
+                Ведение астрологического дневника событий (по желанию – для
+                точной настройки прогноза)
+              </li>
+              <li class="list-item">
+                Возможность заказа ритуалов в Индии (пуджи, коррекционные
+                практики под ваш запрос)
+              </li>
+              <li class="list-item">
+                2 онлайн-встречи в месяц – живая настройка, ответы, углубление
+              </li>
+            </ul>
+            <p class="result-title">Результат:</p>
+            <ul class="result-list">
+              <li class="result-item">
+                Чувство, что рядом есть проводник, которому можно доверять
+              </li>
+              <li class="result-item">
+                Постоянная астрологическая настройка и поддержка
+              </li>
+              <li class="result-item">
+                Пространство для решений, кризисов, роста и тонкой настройки
+                судьбы
+              </li>
+              <li class="result-item">
+                Осознание, что вы не одни: за вами знание, ритм и забота
+              </li>
+            </ul>
+            <p class="price-title">Стоимость:</p>
+            <ul class="price-list">
+              <li class="price-item">
+                <p class="price-time">3 месяца</p>
+                <p class="item-price">2500 €</p>
+              </li>
+              <li class="price-item">
+                <p class="price-time">6 месяцев</p>
+                <p class="item-price">4500 €</p>
+              </li>
+              <li class="price-item">
+                <p class="price-time">12 месяцев</p>
+                <p class="item-price">8000 €</p>
+              </li>
+            </ul>
+            <button type="button" class="buy-btn" data-modal-open="modal3">
+              купить
+            </button>
+          </div>
+          <p class="this-format">
+            Это формат для тех, кто ценит индивидуальный подход, глубину и
+            системность. Когда вы готовы не просто спрашивать – а жить в
+            согласии с собой и временем
+          </p>
+        </div>
+      </section>
+      <section class="add-formats" id="additional-formats">
+        <div class="container">
+          <h2 class="title">Дополнительные</h2>
+          <p class="subtitle">форматы</p>
+          <ul class="list">
+            <li class="list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/add-formats/add-01-1x.png 1x,
+                    ./src/img/add-formats/add-01-2x.png 2x
+                  "
+                  width="48"
+                  height="auto"
+                />
+                <img
+                  class="format-item-image"
+                  src="./src/img/add-formats/add-01-1x.png"
+                  alt="image"
+                  width="48"
+                  height="auto"
+                />
+              </picture>
+              <p class="item-title">Подбор</p>
+              <p class="item-subtitle">дат</p>
+              <ul class="format-list">
+                <li class="format-item">
+                  <p class="format-text">Стоимость: 300 €</p>
+                </li>
+              </ul>
+              <div class="text-box">
+                <p class="text">
+                  Операции, переезд, открытие бизнеса, крупные покупки, зачатие
+                  или рождение ребёнка
+                </p>
+                <p class="text">
+                  Я подбираю наиболее гармоничные и безопасные периоды, учитывая
+                  вашу натальную карту и текущие транзиты
+                </p>
+              </div>
+              <button type="button" class="buy-btn" data-modal-open="modal4">
+                купить
+              </button>
+            </li>
+            <li class="list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/add-formats/add-02-1x.png 1x,
+                    ./src/img/add-formats/add-02-2x.png 2x
+                  "
+                  width="48"
+                  height="auto"
+                />
+                <img
+                  class="format-item-image"
+                  src="./src/img/add-formats/add-02-1x.png"
+                  alt="image"
+                  width="48"
+                  height="auto"
+                />
+              </picture>
+              <p class="item-title">Ректификация времени</p>
+              <p class="item-subtitle">рождения</p>
+              <ul class="format-list">
+                <li class="format-item">
+                  <p class="format-text">Стоимость: 200 €</p>
+                </li>
+              </ul>
+              <div class="text-box">
+                <p class="text">
+                  Если время рождения неизвестно (даже примерно), я провожу
+                  уточнение на основе событий жизни
+                </p>
+                <p class="text">
+                  ❗️ В консультациях от 900 € ректификация включена при
+                  необходимости
+                </p>
+              </div>
+              <button type="button" class="buy-btn" data-modal-open="modal4">
+                купить
+              </button>
+            </li>
+            <li class="list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/add-formats/add-03-1x.png 1x,
+                    ./src/img/add-formats/add-03-2x.png 2x
+                  "
+                  width="48"
+                  height="auto"
+                />
+                <img
+                  class="format-item-image"
+                  src="./src/img/add-formats/add-03-1x.png"
+                  alt="image"
+                  width="48"
+                  height="auto"
+                />
+              </picture>
+              <p class="item-title">Индивидуальные и групповые ритуалы</p>
+              <p class="item-subtitle">в храмах Индии</p>
+              <ul class="format-list">
+                <li class="format-item">
+                  <p class="format-text light">Стоимость</p>
+                </li>
+                <li class="format-item">
+                  <p class="format-text">рассчитывается индивидуально</p>
+                </li>
+              </ul>
+              <div class="text-box">
+                <p class="text">
+                  Проводятся в соответствии с вашей картой и запросом
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="questions" id="faq">
+        <div class="container">
+          <h2 class="title">Часто задаваемые</h2>
+          <p class="subtitle">вопросы</p>
+          <div class="questions-container">
+            <ul class="questions-list list">
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <p class="question-number">[ 01 ]</p>
+                    <p class="questions-item-title">
+                      Я ничего не понимаю в астрологии. Мне подойдёт
+                      консультация?
+                    </p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      – Да, конечно. Я объясняю всё простым, живым языком, без
+                      перегруза терминами. Моя задача – помочь вам понять, а не
+                      усложнить
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <p class="question-number">[ 02 ]</p>
+                    <p class="questions-item-title">
+                      У меня нет точного времени рождения. Это проблема?
+                    </p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      – Нет. Если время известно примерно – я уточняю его. Если
+                      неизвестно вовсе – возможна ректификация (200 €). <br />
+                      <br />
+                      В консультациях от 900 € – уточнение включено.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <p class="question-number">[ 03 ]</p>
+                    <p class="questions-item-title">Можно ли срочно?</p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      – Да. Срочная консультация проводится в течение 1–2 дней
+                      после оплаты.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <p class="question-number">[ 04 ]</p>
+                    <p class="questions-item-title">
+                      Что даёт анализ совместимости?
+                    </p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      – Вы узнаете, как вы взаимодействуете с партнёром, где
+                      гармония, а где напряжение. Это помогает лучше понимать,
+                      слышать и поддерживать друг друга – и выстраивать зрелые,
+                      осознанные отношения.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <p class="question-number">[ 05 ]</p>
+                    <p class="questions-item-title">
+                      Я в другой стране. Это возможно?
+                    </p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      – Да. Все консультации проходят онлайн (Zoom или аудио по
+                      выбору). <br /><br />
+                      Вы получите запись и материалы после встречи.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <p class="question-number">[ 06 ]</p>
+                    <p class="questions-item-title">
+                      Можно ли оплатить частями?
+                    </p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      – Да. Возможна рассрочка через украинские банки.
+                      <br /><br />
+                      Сообщите при записи – мы подберём удобный формат.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer">
+      <div class="container">
+        <h2 class="title">Если возникли вопросы</h2>
+        <p class="text">или нужна помощь с оплатой</p>
+        <p class="telegram-text">– пиши моей команде в Telegram</p>
+        <a
+          class="telegram-link"
+          href="https://t.me/Evgeniy_cyber_security"
+          target="_blank"
+          rel="nofollow"
+          ><img src="./src/img/footer/telegram.svg" alt="telegram" width="60" />
+          <img
+            class="arrow"
+            src="./src/img/footer/arrow.svg"
+            alt="arrow"
+            width="40"
+        /></a>
+        <ul class="fop-list">
+          <li class="fop-item">фоп Бардадим вікторія</li>
+          <li class="fop-item">іпн 3060917441</li>
+        </ul>
+        <a
+          class="insta-link"
+          href="https://www.instagram.com/vikabardadym_astrolog/"
+          target="_blank"
+          rel="nofollow"
+          ><img
+            src="./src/img/footer/author-insta.svg"
+            alt="insta"
+          />@instagram</a
+        >
+        <ul class="deals-list">
+          <li class="deals-item">
+            <a class="deals-link">публічна оферта</a>
+          </li>
+          <li class="deals-item">
+            <a class="deals-link">політика конфідеційності</a>
+          </li>
+        </ul>
+        <a
+          class="disigner-link"
+          href="https://www.instagram.com/lisabardadym"
+          target="_blank"
+          rel="nofollow"
+          ><img src="./src/img/footer/disigner-insta.svg" alt="insta" />
+          <p class="disinger-text">
+            розробка сайту <br /><span>lisa bardadym</span>
+          </p></a
+        >
+      </div>
+    </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu-container">
+      <div class="mobile-menu">
+        <button class="close-button-menu js-close-menu">ЗАКРЫТЬ</button>
+        <ul class="nav-list list">
+          <li class="mobile-menu-links list-item">
+            <a class="link" href="#about-me">обо мне</a>
+          </li>
+          <li class="mobile-menu-links list-item">
+            <a class="link" href="#intro-consultation">Вводная консультация</a>
+          </li>
+          <li class="mobile-menu-links list-item">
+            <a class="link" href="#urgent-consultation">Срочная консультация</a>
+          </li>
+          <li class="mobile-menu-links list-item">
+            <a class="link" href="#full-consultation">Полная консультация</a>
+          </li>
+          <li class="mobile-menu-links list-item">
+            <a class="link" href="#premium-consultation"
+              >Премиальная консультация</a
+            >
+          </li>
+          <li class="mobile-menu-links list-item">
+            <a class="link" href="#specialized-consultations"
+              >Специализированные консультации</a
+            >
+          </li>
+          <li class="mobile-menu-links list-item">
+            <a class="link" href="#premium-support">Премиум сопровождение</a>
+          </li>
+          <li class="mobile-menu-links list-item">
+            <a class="link" href="#additional-formats"
+              >Дополнительные форматы</a
+            >
+          </li>
+          <li class="mobile-menu-links list-item">
+            <a class="link" href="#faq">ответы на вопросы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal="modal1">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="30"
+            height="30"
+            alt="close"
+          />
+        </button>
+        <div class="modal-box">
+          <script
+            id="89970341894df227f46df0617ee8fbc5ab145c10"
+            src="https://vikabardadym.in.ua/pl/lite/widget/script?id=1417896"
+          ></script>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal="modal2">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="30"
+            height="30"
+            alt="close"
+          />
+        </button>
+        <div class="modal-box">
+          <script
+            id="b922c4c90a0474ff18451e2360ee4ddab242603f"
+            src="https://vikabardadym.in.ua/pl/lite/widget/script?id=1417900"
+          ></script>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal="modal3">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="30"
+            height="30"
+            alt="close"
+          />
+        </button>
+        <div class="modal-box">
+          <script
+            id="cda714747333b0f77dc935deca6c0063797f3979"
+            src="https://vikabardadym.in.ua/pl/lite/widget/script?id=1417904"
+          ></script>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal="modal4">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="30"
+            height="30"
+            alt="close"
+          />
+        </button>
+        <div class="modal-box">
+          <script
+            id="30993e202790ba5953521b1896e299e747e5b246"
+            src="https://vikabardadym.in.ua/pl/lite/widget/script?id=1417907"
+          ></script>
+        </div>
+      </div>
+    </div>
+    <script src="./src/js/mobile-menu.js" type="module"></script>
+    <script src="./src/js/js-modal.js" type="module"></script>
+    <script src="./src/js/format-hide.js" type="module"></script>
+    <script src="./src/js/questions.js" type="module"></script>
+    <script src="./src/js/marquee.js" type="module"></script>
   </body>
 </html>
